@@ -1,0 +1,84 @@
+/* Write CSS styling for a division with the class 
+"grid-container." It contains 100 items and should 
+display them all at equal size in a 10x10 grid. They 
+should be colored like the sea with a slightly darker 
+border, and all text inside them should be hidden. 
+This container should use flexbox. */
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 2px solid rgb(0, 0, 102);
+  background-color: rgb(51, 153, 255);
+}
+
+.grid-container > div {
+  width: 10%;
+  height: 10%;
+  text-align: center;
+}
+
+.grid-container > div > p {
+  color: rgb(0, 0, 102);
+  visibility: hidden;
+}
+
+
+/* Write CSS to make the text in the div with class 
+"logo" look sinister and cool. It should be styled 
+with fancy or otherwise decorative font and bright, 
+vibrant colours. Using Flexbox, it should appear all 
+the way on the left side of the nav bar. Write some 
+more CSS to make the text in the "new-game" div look 
+interesting and stylish. It should be styled with a 
+unique font and use an interesting colour. It should 
+appear over on the right of the nav bar, also using flexbox. */
+
+
+.logo {
+  font-family: "Serif";
+  color: black;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.new-game {
+  font-family: "Sans Serif";
+  color: blue;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Using CSS, draw a naval ship from overhead. */
+
+.ship {
+  width: 200px;
+  height: 200px;
+  border: 10px solid black;
+  border-radius: 50%;
+  background-color: gray;
+  position: relative;
+}
+
+.ship:before,
+.ship:after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+.ship:before {
+  left: 0;
+}
+
+.ship:after {
+  right: 0;
+}

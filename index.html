@@ -1,0 +1,156 @@
+<!-- This project was entirely written by OpenAI using prompts provided by me. Prompts in comments. -->
+
+<!-- Write HTML code for a complete web page. It should be empty aside from the title, which is "Battle Ship." It should include a Javascript file called "battleship.js" using script tags. It should also include a link to a "style.css" file in the appropriate place. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Battle Ship</title>
+  <!-- Write an HTML script tag that includes src="https://code.jquery.com/jquery-3.6.0.min.js" as well as
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- (end of code inserted from above prompt) -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="battleship.js"></script>
+</head>
+<body>
+
+  <!-- Write HTML code for a navbar. It should have a logo on the left side 
+    which should be text that says "Battle Ship." The logo should be inside 
+    a DIV tag with class "logo."  There should be a button on the right side 
+    which says "Start a New Game." The button should have a class of "new-game." -->
+
+  <div class="navbar">
+    <div class="logo">Battle Ship</div>
+    <div class="new-game">Start a New Game</div>
+  </div>
+
+  <!-- Find a link to a picture of a ship in PNG format. Put it into an HTML IMG tag. -->
+  <img src="https://i.pinimg.com/736x/4c/fc/cb/4cfccb82d3d9f5b6a9a7f5b8d8368cd0.jpg">
+
+
+  
+  <!-- Write HTML code to create a grid of ten by ten squares. 
+    Each square should have its own distinct HTML class. The columns of the grid should be labelled A through J 
+    and the rows should be labelled 1 through 10. For example, 
+    the top left square should have the HTML class "A1." -->
+
+  <div class="grid-container">
+    <div class="A1">1</div>
+    <div class="A2">2</div>
+    <div class="A3">3</div>  
+    <div class="A4">4</div>
+    <div class="A5">5</div>
+    <div class="A6">6</div>
+    <div class="A7">7</div>
+    <div class="A8">8</div>
+    <div class="A9">9</div>
+    <div class="A10">10</div>
+    <div class="B1">1</div>
+    <div class="B2">2</div>
+    <div class="B3">3</div>  
+    <div class="B4">4</div>
+    <div class="B5">5</div>
+    <div class="B6">6</div>
+    <div class="B7">7</div>
+    <div class="B8">8</div>
+    <div class="B9">9</div>
+    <div class="B10">10</div>
+    <div class="C1">1</div>
+    <div class="C2">2</div>
+    <div class="C3">3</div>  
+    <div class="C4">4</div>
+    <div class="C5">5</div>
+    <div class="C6">6</div>
+    <div class="C7">7</div>
+    <div class="C8">8</div>
+    <div class="C9">9</div>
+    <div class="C10">10</div>
+    <div class="D1">1</div>
+    <div class="D2">2</div>
+    <div class="D3">3</div>  
+    <div class="D4">4</div>
+    <div class="D5">5</div>
+    <div class="D6">6</div>
+    <div class="D7">7</div>
+    <div class="D8">8</div>
+    <div class="D9">9</div>
+    <div class="D10">10</div>
+    <div class="E1">1</div>
+    <div class="E2">2</div>
+    <div class="E3">3</div>  
+    <div class="E4">4</div>
+    <div class="E5">5</div>
+    <div class="E6">6</div>
+    <div class="E7">7</div>
+    <div class="E8">8</div>
+    <div class="E9">9</div>
+    <div class="E10">10</div>
+    <div class="F1">1</div>
+    <div class="F2">2</div>
+    <div class="F3">3</div>  
+    <div class="F4">4</div>
+    <div class="F5">5</div>
+    <div class="F6">6</div>
+    <div class="F7">7</div>
+    <div class="F8">8</div>
+    <div class="F9">9</div>
+    <div class="F10">10</div>
+    <div class="G1">1</div>
+    <div class="G2">2</div>
+    <div class="G3">3</div>  
+    <div class="G4">4</div>
+    <div class="G5">5</div>
+    <div class="G6">6</div>
+    <div class="G7">7</div>
+    <div class="G8">8</div>
+    <div class="G9">9</div>
+    <div class="G10">10</div>
+    <div class="H1">1</div>
+    <div class="H2">2</div>
+    <div class="H3">3</div>  
+    <div class="H4">4</div>
+    <div class="H5">5</div>
+    <div class="H6">6</div>
+    <div class="H7">7</div>
+    <div class="H8">8</div>
+    <div class="H9">9</div>
+    <div class="H10">10</div>
+    <div class="I1">1</div>
+    <div class="I2">2</div>
+    <div class="I3">3</div>  
+    <div class="I4">4</div>
+    <div class="I5">5</div>
+    <div class="I6">6</div>
+    <div class="I7">7</div>
+    <div class="I8">8</div>
+    <div class="I9">9</div>
+    <div class="I10">10</div>
+    <div class="J1">1</div>
+    <div class="J2">2</div>
+    <div class="J3">3</div>  
+    <div class="J4">4</div>
+    <div class="J5">5</div>
+    <div class="J6">6</div>
+    <div class="J7">7</div>
+    <div class="J8">8</div>
+    <div class="J9">9</div>
+    <div class="J10">10</div>
+  </div>
+
+</body>
+</html>
+
+
+<!-- 
+Write a javascript program to run a game of battleship.
+
+1. Create a grid of size 10x10.
+
+2. Place 5 ships on the grid at random locations.
+
+3. Allow the user to guess the locations of the ships.
+
+4. If the user guesses a location of a ship, mark it as hit.
+
+5. If the user guesses all the locations of the ships, they win the game. -->
